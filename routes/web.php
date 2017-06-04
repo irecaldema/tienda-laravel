@@ -42,10 +42,9 @@ Route::get('/product/{slug}', [
 
 Auth::routes();
 
-Route::get('/salida', function(){
-	var_dump(Auth::check());
+Route::get('/logout', function(){
 	Auth::logout();
-	var_dump(Auth::check());
+    return redirect('/');
 });
 
 // Carrito 
