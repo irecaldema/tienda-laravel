@@ -88,7 +88,7 @@ Route::get('payment', array(
 ));
 // Después de realizar el pago Paypal redirecciona a esta ruta
 Route::get('payment/status', array(
-	'as' => 'payment/status',
+	'as' => 'payment.status',
 	'uses' => 'PaypalController@getPaymentStatus',
 ));
 
