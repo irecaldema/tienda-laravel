@@ -9,7 +9,7 @@
 			<h3>Desarrollado por:</h3>
 			<div class="author-info">
 				<img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="" class="avatar">
-				<p>Original de @ovedfs y modificado por mi.</p>
+				<p>Original de @ovedfs y modificado por irecaldema</p>
 			</div>
 		</div>
 	</div>
