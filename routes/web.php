@@ -24,10 +24,6 @@ Route::bind('user', function($user){
     return App\User::find($user);
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [
 	'as'	=> 'home',
 	'uses'	=> 'StoreController@index'
@@ -39,6 +35,16 @@ Route::get('/product/{slug}', [
 	'as'	=> 'product-detail',
 	'uses'	=> 'StoreController@show'
 ]);
+
+// Route::get('orders', [
+// 	'as' => 'orders',
+// 	'uses' => 'StoreController@orders'
+// ])->middleware('auth');
+
+Route::get('/orders', [
+	'as' => 'orders',
+	'uses' => 'StoreController@orders'
+])->middleware('auth');
 
 Auth::routes();
 

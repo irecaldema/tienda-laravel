@@ -58,7 +58,9 @@
             </div>
             <hr>
             
-            <?php echo $orders->render(); ?>
+            <?php 
+                //echo $orders->render(); 
+            ?>
             
         </div>
     </div>
