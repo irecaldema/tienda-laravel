@@ -24,10 +24,7 @@ class StoreController extends Controller
     	// echo Auth::user()->id;
     	$orders = Order::where('user_id', Auth::user()->id);
     	// dd($orders);
-    	if($orders)
-    		return view('admin.order.index', compact('orders'));
-    	else
-    		return view('admin.order.index');
+    	return view('store.order.index', compact('orders'));
     }
 
 }
