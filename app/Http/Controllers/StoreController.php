@@ -22,7 +22,8 @@ class StoreController extends Controller
     public function orders(){
     	// dd(Auth::user());
     	// echo Auth::user()->id;
-    	$orders = Order::where('user_id', Auth::user()->id);
+        // $orders = Order::where('user_id', Auth::user()->id);
+    	$orders = Order::all();
     	// dd($orders);
     	return view('store.order.index', compact('orders'));
     }
